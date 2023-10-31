@@ -108,7 +108,7 @@ function searchHandler(e) {
   showSuggestions(results, inputVal);
 }
 
-function showSuggestions(results, inputVal) {
+/*function showSuggestions(results, inputVal) {
   // TODO
   suggestions.innerHTML = "";
   if (inputVal) {
@@ -118,8 +118,8 @@ function showSuggestions(results, inputVal) {
       suggestions.appendChild(liEl);
     }
   }
-}
-/*function showSuggestions(results, inputVal) {
+}*/
+function showSuggestions(results, inputVal) {
   suggestions.innerHTML = "";
   if (inputVal) {
     results.forEach((fruit) => {
@@ -128,7 +128,7 @@ function showSuggestions(results, inputVal) {
       suggestions.appendChild(liElem);
     });
   }
-}*/
+}
 
 function useSuggestion(e) {
   // TODO
