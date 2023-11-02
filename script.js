@@ -95,14 +95,13 @@ const fruits = [
 }*/
 
 function search(str) {
-  return fruits.filter(
-    (fruit) => fruit.toLowerCase().includes(str) || fruit.includes(str)
-  );
+  return fruits.filter((fruit) => fruit.toLowerCase().includes(str));
 }
 
 function searchHandler(e) {
   // TODO
-  const inputVal = e.target.value;
+  //to find Banana with searchterm bAnAnA for example
+  const inputVal = e.target.value.toLowerCase();
   //const inputVal = e.target.value.toLowerCase(); // Convert input to lowercase
   const results = search(inputVal);
   showSuggestions(results, inputVal);
